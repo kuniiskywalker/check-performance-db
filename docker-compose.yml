@@ -21,3 +21,11 @@ mysql5.7:
   environment:
     MYSQL_DATABASE: mydb
     MYSQL_ROOT_PASSWORD: secret
+
+postgres:
+  build: ./builds/postgres
+  ports:
+    - "3004:3306"
+  environment:
+    MYSQL_DATABASE: mydb
+    MYSQL_ROOT_PASSWORD: secret
